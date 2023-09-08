@@ -1,0 +1,7 @@
+package com.demo.Liquer.dao;
+
+import com.demo.Liquer.bean.LoginB;
+
+public interface LoginDao  extends JpaRepository<LoginB,Integer> {
+
+}

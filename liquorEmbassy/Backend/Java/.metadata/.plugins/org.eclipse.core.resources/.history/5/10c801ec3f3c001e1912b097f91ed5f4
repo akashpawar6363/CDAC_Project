@@ -1,0 +1,14 @@
+package com.demo.Liquer.dao;
+
+import com.demo.Liquer.bean.LoginB;
+
+public class LoginDaoImpl implements LoginDao 
+{
+
+	@Override
+	public int validateUser(LoginB c) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

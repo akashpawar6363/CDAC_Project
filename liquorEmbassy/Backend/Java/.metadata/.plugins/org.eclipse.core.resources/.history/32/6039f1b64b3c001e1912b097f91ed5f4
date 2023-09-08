@@ -1,0 +1,12 @@
+package com.demo.Liquer.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.demo.Liquer.bean.LoginB;
+
+public interface LoginDao  extends JpaRepository<LoginB,String>
+{
+	LoginB findByUsernameAndPassword(String username, String password);
+	
+
+}

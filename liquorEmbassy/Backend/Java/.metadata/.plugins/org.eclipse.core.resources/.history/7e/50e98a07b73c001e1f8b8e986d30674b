@@ -1,0 +1,40 @@
+package com.demo.Liquer.bean;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Orders")
+public class Orders {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long OrderId;
+	private String Brand;
+	private int Qty;
+	private double price;
+	private String type;
+	private int size;
+	private String username;
+	
+	public Orders() {
+		super();
+	}
+
+	public Orders(Long orderId, String brand, int qty, double price, String type, int size, String username) {
+		super();
+		OrderId = orderId;
+		Brand = brand;
+		Qty = qty;
+		this.price = price;
+		this.type = type;
+		this.size = size;
+		this.username = username;
+	}
+	
+	
+	
+}

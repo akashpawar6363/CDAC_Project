@@ -1,0 +1,9 @@
+package com.demo.Liquer.service;
+
+import com.demo.Liquer.bean.Orders;
+
+public interface CartService {
+
+	Orders addOrderOfCart(Orders o);
+
+}

@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Background color for the entire page */
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .dashboard-content {
+    border: 2px solid #ddd; /* Border around the content area */
+    border-radius: 8px;
+    background-color: white; /* Content background color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for a raised effect */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Adjust this as needed */
+  }
+  
+  .page-container {
+    border: 2px solid #ddd; /* Border style */
+    border-radius: 8px; /* Border radius for rounded corners */
+    padding: 20px;
+    background-color: white; /* Content background color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for a raised effect */
+    max-width: 90%; /* Adjust this as needed */
+  }
+.json-table-container {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  
+  .json-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+  }
+  
+  .json-table th,
+  .json-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .json-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .selected-row {
+    background-color: #f0f8ff; /* Light blue color for selected row */
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #90ee90; /* Light green color for selected row */
+    cursor: pointer;
+  }
+  
+  .fixed-row {
+    background-color: #ffa07a; /* Salmon color for fixed row */
+  }
+  
+  .action-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .action-buttons button {
+    margin: 0 10px;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive CSS */
+  @media screen and (max-width: 768px) {
+    .json-table-container {
+      overflow-x: scroll;
+    }
+  
+    .json-table th,
+    .json-table td {
+      padding: 6px;
+    }
+  
+    .action-buttons button {
+      padding: 4px 8px;
+    }
+  }
+  .top-right {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }  
+  
+  .logout-button:hover {
+    background-color: #0056b3;
+  }
+  

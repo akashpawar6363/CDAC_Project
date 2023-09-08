@@ -1,0 +1,115 @@
+/* AlcoholShop.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.welcome-message {
+  margin: 0;
+}
+
+.top-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: lightgray;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+}
+
+.product-card p {
+  margin: 10px 0;
+}
+
+.product-card button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.nav-button.cart-button {
+  background-color: #27ae60; /* Green color */
+}
+
+/* Style for "My Order" button */
+.nav-button.order-button {
+  background-color: #e74c3c; /* Red color */
+}
+.product-card button:hover {
+  background-color: #2980b9;
+}
+
+/* Make buttons responsive */
+.product-card button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Make buttons take full width of the container */
+  margin-top: 10px; /* Add some spacing between buttons */
+}
+
+/* Responsive hover effect */
+.product-card button:hover {
+  background-color: #2980b9;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust column size */
+  }
+  
+  .product-card {
+    padding: 10px; /* Reduce padding for smaller cards */
+  }
+  
+  .product-card button {
+    padding: 3px 6px; /* Reduce padding for smaller buttons */
+    font-size: 12px; /* Adjust font size */
+  }
+}

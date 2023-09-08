@@ -1,0 +1,17 @@
+package com.demo.Liquer.service;
+
+import com.demo.Liquer.bean.Orders;
+
+public class CartServiceImpl implements CartService
+{ 
+	@Autoewired
+	private CartDao cartdao;
+ 
+	@Override
+	public int addOrderOfCart(Orders o) {
+		
+		
+		return 0;
+	}
+
+}

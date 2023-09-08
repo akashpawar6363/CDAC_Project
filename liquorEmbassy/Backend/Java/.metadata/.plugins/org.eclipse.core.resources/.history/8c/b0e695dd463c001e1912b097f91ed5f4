@@ -1,0 +1,5 @@
+package com.demo.Liquer.bean;
+
+public class Product {
+
+}

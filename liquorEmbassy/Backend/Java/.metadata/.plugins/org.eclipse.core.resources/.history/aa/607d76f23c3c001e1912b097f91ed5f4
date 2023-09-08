@@ -1,0 +1,5 @@
+package com.demo.Liquer.dao;
+
+public class LoginDaoImpl {
+
+}

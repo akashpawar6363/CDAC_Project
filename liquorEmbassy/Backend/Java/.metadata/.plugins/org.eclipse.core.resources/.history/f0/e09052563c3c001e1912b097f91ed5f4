@@ -1,0 +1,5 @@
+package com.demo.Liquer.service;
+
+public interface LoginService {
+
+}

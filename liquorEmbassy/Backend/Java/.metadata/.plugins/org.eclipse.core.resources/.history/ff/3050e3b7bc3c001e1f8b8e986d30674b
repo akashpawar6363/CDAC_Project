@@ -1,0 +1,103 @@
+package com.demo.Liquer.bean;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="Orders")
+public class Orders {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long OrderId;
+	private String Brand;
+	private int Qty;
+	private double price;
+	private String type;
+	private int size;
+	private String username;
+	
+	public Orders() {
+		super();
+	}
+
+	public Orders(Long orderId, String brand, int qty, double price, String type, int size, String username) {
+		super();
+		OrderId = orderId;
+		Brand = brand;
+		Qty = qty;
+		this.price = price;
+		this.type = type;
+		this.size = size;
+		this.username = username;
+	}
+
+	public Long getOrderId() {
+		return OrderId;
+	}
+
+	public void setOrderId(Long orderId) {
+		OrderId = orderId;
+	}
+
+	public String getBrand() {
+		return Brand;
+	}
+
+	public void setBrand(String brand) {
+		Brand = brand;
+	}
+
+	public int getQty() {
+		return Qty;
+	}
+
+	public void setQty(int qty) {
+		Qty = qty;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public int getSize() {
+		return size;
+	}
+
+	public void setSize(int size) {
+		this.size = size;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	@Override
+	public String toString() {
+		return "Orders [OrderId=" + OrderId + ", Brand=" + Brand + ", Qty=" + Qty + ", price=" + price + ", type="
+				+ type + ", size=" + size + ", username=" + username + "]";
+	}
+	
+	
+	
+}

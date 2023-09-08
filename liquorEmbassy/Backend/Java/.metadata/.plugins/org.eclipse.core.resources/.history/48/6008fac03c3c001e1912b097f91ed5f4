@@ -1,0 +1,20 @@
+package com.demo.Liquer.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.demo.Liquer.bean.LoginB;
+import com.demo.Liquer.dao.LoginDao;
+
+public class LoginServiceImpl implements LoginService {
+	
+ @Autowired
+private LoginDao logindao;
+ 
+ @Override
+	
+	public int verify(LoginB c) {
+		// TODO Auto-generated method stub
+		return logindao.validateUser;
+	}
+
+}
